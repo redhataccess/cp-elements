@@ -1,4 +1,10 @@
-# PatternFly Elements [![Build Status](https://travis-ci.org/patternfly/patternfly-elements.svg?branch=master)](https://travis-ci.org/patternfly/patternfly-elements)
+# CP Elements
+
+Clone of PatternFly Elements [![Build Status](https://travis-ci.org/patternfly/patternfly-elements.svg?branch=master)](https://travis-ci.org/patternfly/patternfly-elements)
+
+This repo was created to keep track of custom web components made for the customer portal that aren't necessarily great candidates for open source.
+
+----------------------------------------------------------
 
 ## Table of Contents
 
