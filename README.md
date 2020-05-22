@@ -25,8 +25,8 @@ A Yeoman generator is included for creating Web Components that meets these goal
 
 ## Quick start
 
-    git clone git@github.com:patternfly/patternfly-elements.git
-    cd patternfly-elements
+    git clone git@github.com:redhataccess/cp-elements.git
+    cd cp-elements
     npm install # this will take a while due to lerna bootstrap
     npm run storybook
 
@@ -79,14 +79,7 @@ npm run test [component-name]
 
 ## Support
 
-Though we have tested and verified general usability within these frameworks, PFE makes no guarantees about compatibility within specific sites & applications. Please test accordingly. For more details, check out the [official status card per component](https://github.com/patternfly/patternfly-elements/issues?q=is%3Aopen+is%3Aissue+label%3A%22status+tracking+only%22) or visit the [status page on the documentation site](https://patternfly.github.io/patternfly-elements/getting-started/component-status/).
-
-
-## Stay informed
-
-Sign up for the for the [active project participation email list](https://www.redhat.com/mailman/listinfo/patternfly-elements-contribute) and/or the [informed email list](https://www.redhat.com/mailman/listinfo/patternfly-elements-announce).
-
-You can also participate in discussions on [patternfly.slack.com](https://patternfly.slack.com) in the #patternfly-elements channel.
+Though we have tested and verified general usability within these frameworks, ```cp-elements``` makes no guarantees about compatibility within specific sites & applications. Please test accordingly. ```cp-elements``` is currently supported and maintained by the Customer Portal internal team.
 
 ---
 
