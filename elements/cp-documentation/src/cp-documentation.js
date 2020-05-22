@@ -150,6 +150,7 @@ class PfeDocumentation extends PFElement {
 
   /**
    * Allows parent DOM to access the module data
+   * @return {object} The module data
    */
   getData() {
     if (Object.keys(this._moduleData).length) {

@@ -1,40 +1,47 @@
-# PatternFly Element | Documentation element
-Encapsulate documentation content, which may be loaded dynamically from an API
+# PatternFly Element for Red Hat Customer Portal | Documentation element
+Encapsulate customer portal documentation content, styles it in a way that doesn't get contaminated from the parent DOM styles, and the content may be loaded dynamically from an API (this feature is in alpha, waiting for the FCC project to make assemblies API).
 
 ## Usage
-Describe how best to use this web component along with best practices.
+Intended use is to wrap the body of documentation content that should be styled by rhdocs.css.
 
 ```html
 <cp-documentation>
     <!-- Default slot -->
-    <h2>This is cp-documentation</h2>
-    
+    <h2>Documentation content compiled from AsciiDoc.</h2>
 </cp-documentation>
 ```
 
-### Accessibility
-Explain how this component meets accessibility standards.
+## Public Methods
+
+`cpDocumentation.loadData()`
+Tells component to load data from the pfe-endpoint URL.
+
+`cpDocumentation.getData()`
+Returns the module data from the endpoint.
 
 ## Slots
-
-- `namedSlot`: Describe each available slot and best practices around what markup it can contain.
+This element takes all content inside of it, does NOT put it into a slot, and copies it into the shadow DOM to protect it from outside styles.
 
 ## Attributes
 
-- `pfe-loaded`: Describe this attribute and what function is serves.
-- `pfe-endpoint`: Describe this attribute and what function is serves.
-- `pfe-css`: Describe this attribute and what function is serves.
+- `pfe-loaded`: @todo ALPHA Used to indicate that the correct content has already been loaded (dynamically from an endpoint, or server side)
+- `pfe-endpoint`: @todo ALPHA The URL to get the content from, the component makes assumptions about how the response is structured.
+- `pfe-css`: The URL of CSS that should be inserted into the shadow DOM.
 
 ## Events
-Describe any events that are accessible external to the web component. There is no need to describe all the internal-only functions.
+Events have not been implemented yet.
 
 ### cp-documentation:change
+@todo
 
 ### cp-documentation:loaded
+@todo
 
+### Accessibility
+This wraps content, it doesn't do anything that enhances or gets in the way of accessibility.
 
 ## Dependencies
-Describe any dependent elements or libraries here too.
+None
 
 ## Dev
 
