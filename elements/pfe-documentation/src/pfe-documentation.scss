@@ -15,11 +15,6 @@ $LOCAL: documentation;
   display: none;
 }
 
-// Header information is shown in parent scope
-.rhdocs-header {
-  display: none;
-}
-
 //-- Custom styles applied by attributes
 // @each $option in () {
 //   :host([pfe-loaded="#{$option}"]) {

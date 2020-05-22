@@ -46,6 +46,7 @@
             <h1>Demo pages</h1>
 
             <div id="demos" class="pfe-l-grid pfe-l-grid-fill-height pfe-m-gutters pfe-m-all-2-col">
+				<pfe-cta pfe-priority="secondary" pfe-variant="wind"><a href="../elements/cp-link-farm/demo">cp-link-farm</a></pfe-cta>
 				<pfe-cta pfe-priority="secondary" pfe-variant="wind"><a href="../elements/pfe-documentation/demo">pfe-documentation</a></pfe-cta>
 				<pfe-cta pfe-priority="secondary" pfe-variant="wind"><a href="../elements/pfe-styles/demo">pfe-styles</a></pfe-cta>
 			</div>
@@ -56,6 +57,8 @@
                 <div pfe-markdown-container>### TODOs
 | Filename | line # | TODO
 |:------|:------:|:------
+| [pfe-documentation](../elements/pfe-documentation/src/pfe-documentation.js#L91) | 91 | Check for window.shadyCss, if that exists need to disconnect mutationObserver, see IE11 & Edge
+| [pfe-documentation](../elements/pfe-documentation/src/pfe-documentation.js#L108) | 108 | Check for shadyCss, if that exists need to reconnect mutationObserver, see IE11 & Edge
 | [pfe-documentation](../elements/pfe-documentation/src/pfe-documentation.js#L133) | 133 | local caching?
 | [pfelement](../elements/pfelement/src/pfelement.js#L170) | 170 | maybe we should use just the attribute instead of the class?
 | [pfelement](../elements/pfelement/src/pfelement.js#L377) | 377 | This is a duplicate function to cssVariable above, combine them</div>

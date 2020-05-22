@@ -11,21 +11,37 @@
     <pfe-documentation>
       <!-- Default slot -->
       <h2>This is pfe-documentation</h2>
-      
+
     </pfe-documentation>
 
     <!-- Preview different properties -->
-    <pfe-documentation loaded>
+    <pfe-documentation pfe-loaded>
       <h2>This is pfe-documentation</h2>
     </pfe-documentation>
 
-    <pfe-documentation  endpoint>
+    <pfe-documentation  pfe-endpoint>
       <h2>This is pfe-documentation</h2>
     </pfe-documentation>
 
-    <pfe-documentation  css>
+    <pfe-documentation pfe-css>
       <h2>This is pfe-documentation</h2>
     </pfe-documentation>
+
+    <h3>@todo Tests</h3>
+    <ul>
+      <li>Make sure pfe-css styles are added</li>
+      <li>Make sure light dom content is added to shadow dom</li>
+      <li>Make sure light dom updates are added to the shadow dom</li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <h3>@todo Future Tests (When FCC has assemblies)</h3>
+    <ul>
+      <li>Make sure endpoint content is added</li>
+      <li>Make sure pfe-loaded attribute is added when content is loaded</li>
+      <li>Make sure pfe-endpoint isn't loaded if pfe-loaded attribute is present</li>
+    </ul>
 
     <script>
       const elements = [...document.querySelectorAll("pfe-documentation")];
