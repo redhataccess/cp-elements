@@ -10,19 +10,19 @@ const lightDomObserverConfig = {
 
 class PfeDocumentation extends PFElement {
   static get tag() {
-    return "pfe-documentation";
+    return "cp-documentation";
   }
 
   get schemaUrl() {
-    return "pfe-documentation.json";
+    return "cp-documentation.json";
   }
 
   get templateUrl() {
-    return "pfe-documentation.html";
+    return "cp-documentation.html";
   }
 
   get styleUrl() {
-    return "pfe-documentation.scss";
+    return "cp-documentation.scss";
   }
 
   static get events() {

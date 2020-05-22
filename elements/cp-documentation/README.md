@@ -5,11 +5,11 @@ Encapsulate documentation content, which may be loaded dynamically from an API
 Describe how best to use this web component along with best practices.
 
 ```html
-<pfe-documentation>
+<cp-documentation>
     <!-- Default slot -->
-    <h2>This is pfe-documentation</h2>
+    <h2>This is cp-documentation</h2>
     
-</pfe-documentation>
+</cp-documentation>
 ```
 
 ### Accessibility
@@ -28,9 +28,9 @@ Explain how this component meets accessibility standards.
 ## Events
 Describe any events that are accessible external to the web component. There is no need to describe all the internal-only functions.
 
-### pfe-documentation:change
+### cp-documentation:change
 
-### pfe-documentation:loaded
+### cp-documentation:loaded
 
 
 ## Dependencies

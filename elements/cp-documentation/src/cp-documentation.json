@@ -3,7 +3,7 @@
   "title": "Documentation",
   "description": "Encapsulate documentation content, which may be loaded dynamically from an API",
   "type": "object",
-  "tag": "pfe-documentation",
+  "tag": "cp-documentation",
   "class": "PfeDocumentation",
   "category": "container",
   "properties": {
@@ -63,12 +63,12 @@
         "change": {
           "title": "Change",
           "type": "string",
-          "default": "pfe-documentation:change"
+          "default": "cp-documentation:change"
         },
         "loaded": {
           "title": "Loaded",
           "type": "string",
-          "default": "pfe-documentation:loaded"
+          "default": "cp-documentation:loaded"
         }
       }
     }

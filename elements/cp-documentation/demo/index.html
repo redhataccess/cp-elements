@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-    <title>PatternFly Element | pfe-documentation Demo</title>
+    <title>PatternFly Element | cp-documentation Demo</title>
 
     <noscript>
       <link href="../../pfelement/dist/pfelement-noscript.min.css" rel="stylesheet">
@@ -35,11 +35,11 @@
 
     <script>
       require([
-        "../dist/pfe-documentation.umd.js"
+        "../dist/cp-documentation.umd.js"
       ])
 
       window.addEventListener('load', function () {
-        var documentationToLoad = document.querySelectorAll('pfe-documentation[pfe-endpoint]');
+        var documentationToLoad = document.querySelectorAll('cp-documentation[pfe-endpoint]');
 
         for (let i = 0; i < documentationToLoad.length; i++) {
           documentationToLoad[i].loadData();
@@ -48,29 +48,29 @@
     </script>
   </head>
   <body unresolved>
-    <h1><code>pfe-documentation</code></h1>
+    <h1><code>cp-documentation</code></h1>
 
-    <pfe-documentation>
-      <h2>This is pfe-documentation</h2>
-    </pfe-documentation>
+    <cp-documentation>
+      <h2>This is cp-documentation</h2>
+    </cp-documentation>
 
     <hr>
 
     <!-- Preview different properties -->
-    <pfe-documentation pfe-loaded>
-      <h2>This is pfe-documentation that's been loaded</h2>
-    </pfe-documentation>
+    <cp-documentation pfe-loaded>
+      <h2>This is cp-documentation that's been loaded</h2>
+    </cp-documentation>
 
     <hr>
 
-    <pfe-documentation pfe-endpoint="/elements/pfe-documentation/demo/sample-json/module2.json">
+    <cp-documentation pfe-endpoint="/elements/cp-documentation/demo/sample-json/module2.json">
       <h2>This is has an endpoint</h2>
-    </pfe-documentation>
+    </cp-documentation>
     <hr>
 
-    <pfe-documentation pfe-css="https://pantheon2-proxy.ext.us-west.aws.prod.paas.redhat.com/static/rhdocs.css" pfe-endpoint="/elements/pfe-documentation/demo/sample-json/module1.json">
-      <h2>This is pfe-documentation</h2>
-    </pfe-documentation>
+    <cp-documentation pfe-css="https://pantheon2-proxy.ext.us-west.aws.prod.paas.redhat.com/static/rhdocs.css" pfe-endpoint="/elements/cp-documentation/demo/sample-json/module1.json">
+      <h2>This is cp-documentation</h2>
+    </cp-documentation>
 
   </body>
 </html>

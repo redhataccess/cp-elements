@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <script src="/components/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
     <script src="/components/web-component-tester/browser.js"></script>
-    <script type="module" src="../dist/pfe-documentation.js"></script>
+    <script type="module" src="../dist/cp-documentation.js"></script>
   </head>
   <body>
-    <pfe-documentation>
+    <cp-documentation>
       <!-- Default slot -->
-      <h2>This is pfe-documentation</h2>
+      <h2>This is cp-documentation</h2>
 
-    </pfe-documentation>
+    </cp-documentation>
 
     <!-- Preview different properties -->
-    <pfe-documentation pfe-loaded>
-      <h2>This is pfe-documentation</h2>
-    </pfe-documentation>
+    <cp-documentation pfe-loaded>
+      <h2>This is cp-documentation</h2>
+    </cp-documentation>
 
-    <pfe-documentation  pfe-endpoint>
-      <h2>This is pfe-documentation</h2>
-    </pfe-documentation>
+    <cp-documentation  pfe-endpoint>
+      <h2>This is cp-documentation</h2>
+    </cp-documentation>
 
-    <pfe-documentation pfe-css>
-      <h2>This is pfe-documentation</h2>
-    </pfe-documentation>
+    <cp-documentation pfe-css>
+      <h2>This is cp-documentation</h2>
+    </cp-documentation>
 
     <h3>@todo Tests</h3>
     <ul>
@@ -44,14 +44,14 @@
     </ul>
 
     <script>
-      const elements = [...document.querySelectorAll("pfe-documentation")];
+      const elements = [...document.querySelectorAll("cp-documentation")];
 
-      suite("<pfe-documentation>", () => {
+      suite("<cp-documentation>", () => {
         test("it should upgrade", () => {
           assert.instanceOf(
-            document.querySelector("pfe-documentation"),
-            customElements.get("pfe-documentation"),
-            "pfe-documentation should be an instance of pfeDocumentation"
+            document.querySelector("cp-documentation"),
+            customElements.get("cp-documentation"),
+            "cp-documentation should be an instance of pfeDocumentation"
           );
         });
 

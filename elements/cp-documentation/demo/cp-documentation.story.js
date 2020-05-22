@@ -2,7 +2,7 @@ import { storiesOf } from "@storybook/polymer";
 import * as bridge from "@storybook/addon-knobs/polymer";
 import * as tools from "../../../.storybook/utils.js";
 
-import PfeDocumentation from "../dist/pfe-documentation";
+import PfeDocumentation from "../dist/cp-documentation";
 
 const stories = storiesOf("Documentation", module);
 

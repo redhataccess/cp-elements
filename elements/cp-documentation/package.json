@@ -1,13 +1,13 @@
 {
-  "name": "@patternfly/pfe-documentation",
+  "name": "@patternfly/cp-documentation",
   "description": "Documentation element for PatternFly Elements",
   "pfelement": {
     "className": "PfeDocumentation",
-    "elementName": "pfe-documentation",
+    "elementName": "cp-documentation",
     "files": {
-      "styles": "./src/pfe-documentation.scss",
-      "template": "./src/pfe-documentation.html",
-      "js": "./src/pfe-documentation.js"
+      "styles": "./src/cp-documentation.scss",
+      "template": "./src/cp-documentation.html",
+      "js": "./src/cp-documentation.js"
     },
     "assets": []
   },
@@ -19,21 +19,21 @@
   "repository": {
     "type": "git",
     "url": "github:patternfly/patternfly-elements",
-    "directory": "elements/pfe-documentation"
+    "directory": "elements/cp-documentation"
   },
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/pfe-documentation.umd.js",
-  "module": "./dist/pfe-documentation.js",
-  "unpkg": "./dist/pfe-documentation.umd.min.js",
+  "main": "./dist/cp-documentation.umd.js",
+  "module": "./dist/cp-documentation.js",
+  "unpkg": "./dist/cp-documentation.umd.min.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "../../node_modules/.bin/gulp && ../../node_modules/.bin/prettier --ignore-path ../../.prettierignore --write '**/*.{js,json}'",
     "dev": "../../node_modules/.bin/gulp dev",
-    "test": "../../node_modules/.bin/wct --configFile ../../wct.conf.json elements/pfe-documentation/test/"
+    "test": "../../node_modules/.bin/wct --configFile ../../wct.conf.json elements/cp-documentation/test/"
   },
   "contributors": [
     {
