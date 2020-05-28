@@ -98,7 +98,10 @@ class PfeDocumentation extends PFElement {
    * Clone them into the shadowRoot
    */
   _processLightDom() {
-    // @todo Check for window.shadyCss, if that exists need to disconnect mutationObserver, see IE11 & Edge
+    if (window.ShadyCSS) {
+      this._observer.disconnect();
+    }
+
     const shadowWrapper = this.shadowRoot.getElementById("wrapper"),
       oldContentWrapper = this.shadowRoot.getElementById("content"),
       // An element that light dom content will be put into and replaces the shadowWrapper at the end
@@ -115,7 +118,10 @@ class PfeDocumentation extends PFElement {
       shadowWrapper.append(newContentWrapper);
     }
     newContentWrapper.setAttribute("id", "content");
-    // @todo Check for shadyCss, if that exists need to reconnect mutationObserver, see IE11 & Edge
+
+    if (window.ShadyCSS) {
+      this._observer.observe(this, lightDomObserverConfig);
+    }
   }
 
   _loadCss() {
@@ -168,12 +174,6 @@ class PfeDocumentation extends PFElement {
     }
 
     return null;
-  }
-
-
-  // Process the attribute change
-  attributeChangedCallback(attr, oldValue, newValue) {
-    super.attributeChangedCallback(attr, oldValue, newValue);
   }
 
   _changeHandler(event) {
