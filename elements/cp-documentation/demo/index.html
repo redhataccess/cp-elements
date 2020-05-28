@@ -37,14 +37,6 @@
       require([
         "../dist/cp-documentation.umd.js"
       ])
-
-      window.addEventListener('load', function () {
-        var documentationToLoad = document.querySelectorAll('cp-documentation[pfe-endpoint]');
-
-        for (let i = 0; i < documentationToLoad.length; i++) {
-          documentationToLoad[i].loadData();
-        }
-      });
     </script>
   </head>
   <body unresolved>
