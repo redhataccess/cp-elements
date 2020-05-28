@@ -83,6 +83,16 @@ class PfeDocumentation extends PFElement {
     );
   }
 
+  attributeChangedCallback(attr, oldVal, newVal) {
+    super.attributeChangedCallback(attr, oldVal, newVal);
+
+    switch (attr) {
+      case "pfe-endpoint":
+        this.loadData();
+        break;
+    }
+  }
+
   /**
    * Handle initialization or changes in light DOM
    * Clone them into the shadowRoot
