@@ -1,10 +1,11 @@
 {
-  "name": "@patternfly/patternfly-elements",
+  "name": "cpelements",
   "description": "Monorepo for the PatternFly Elements project.",
   "keywords": [
     "web-components",
     "html"
   ],
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "github:patternfly/patternfly-elements"
