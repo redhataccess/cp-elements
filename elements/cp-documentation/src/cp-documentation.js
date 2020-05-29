@@ -98,6 +98,7 @@ class PfeDocumentation extends PFElement {
    * Clone them into the shadowRoot
    */
   _processLightDom() {
+    // Preventing issues in IE11 & Edge
     if (window.ShadyCSS) {
       this._observer.disconnect();
     }
@@ -119,6 +120,7 @@ class PfeDocumentation extends PFElement {
     }
     newContentWrapper.setAttribute("id", "content");
 
+    // Reconnecting mutationObserver for IE11 & Edge
     if (window.ShadyCSS) {
       this._observer.observe(this, lightDomObserverConfig);
     }
