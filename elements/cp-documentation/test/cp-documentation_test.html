@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <script src="/components/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script src="/components/web-component-tester/browser.js"></script>
+    <script type="module" src="../dist/cp-documentation.js"></script>
+  </head>
+  <body>
+    <cp-documentation>
+      <!-- Default slot -->
+      <h2>This is cp-documentation</h2>
+
+    </cp-documentation>
+
+    <!-- Preview different properties -->
+    <cp-documentation pfe-loaded>
+      <h2>This is cp-documentation</h2>
+    </cp-documentation>
+
+    <cp-documentation  pfe-endpoint>
+      <h2>This is cp-documentation</h2>
+    </cp-documentation>
+
+    <cp-documentation pfe-css>
+      <h2>This is cp-documentation</h2>
+    </cp-documentation>
+
+    <h3>@todo Tests</h3>
+    <ul>
+      <li>Make sure pfe-css styles are added</li>
+      <li>Make sure light dom content is added to shadow dom</li>
+      <li>Make sure light dom updates are added to the shadow dom</li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <h3>@todo Future Tests (When FCC has assemblies)</h3>
+    <ul>
+      <li>Make sure endpoint content is added</li>
+      <li>Make sure pfe-loaded attribute is added when content is loaded</li>
+      <li>Make sure pfe-endpoint isn't loaded if pfe-loaded attribute is present</li>
+    </ul>
+
+    <script>
+      const elements = [...document.querySelectorAll("cp-documentation")];
+
+      suite("<cp-documentation>", () => {
+        test("it should upgrade", () => {
+          assert.instanceOf(
+            document.querySelector("cp-documentation"),
+            customElements.get("cp-documentation"),
+            "cp-documentation should be an instance of pfeDocumentation"
+          );
+        });
+
+        // Write tests for each attribute
+        test("loaded attribute is applied correctly", () => {
+          // Test that the attribute applied correctly
+          // assert.equal();
+        });
+        test(" endpoint attribute is applied correctly", () => {
+          // Test that the attribute applied correctly
+          // assert.equal();
+        });
+        test(" css attribute is applied correctly", () => {
+          // Test that the attribute applied correctly
+          // assert.equal();
+        });
+
+        // Write tests for each slot
+
+      });
+    </script>
+  </body>
+</html>
