@@ -1,6 +1,6 @@
 {
-  "name": "@patternfly/patternfly-elements",
-  "description": "Monorepo for the PatternFly Elements project.",
+  "name": "cpelements",
+  "description": "A patternfly",
   "version": "0.0.1",
   "keywords": [
     "web-components",
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "github:patternfly/patternfly-elements"
+    "url": "github:redhataccess/cp-elements"
   },
   "scripts": {
     "start": "npm run doc-listing-inject && spandx",
