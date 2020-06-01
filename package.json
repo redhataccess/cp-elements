@@ -1,6 +1,7 @@
 {
   "name": "@patternfly/patternfly-elements",
   "description": "Monorepo for the PatternFly Elements project.",
+  "version": "0.0.1",
   "keywords": [
     "web-components",
     "html"
@@ -126,6 +127,5 @@
   },
   "dependencies": {
     "gh-pages": "^2.2.0"
-  },
-  "private": true
+  }
 }
