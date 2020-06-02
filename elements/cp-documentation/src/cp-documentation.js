@@ -1,4 +1,4 @@
-import PFElement from "../../pfelement/dist/pfelement.js";
+import PFElement from "../../@patternfly/pfelement/dist/pfelement.js";
 
 // Config for mutation observer to see if things change inside of the component
 const lightDomObserverConfig = {
@@ -153,7 +153,6 @@ class PfeDocumentation extends PFElement {
       fetch(endpointUrl)
         .then(response => response.json())
         .then(data => {
-          console.log(data);
           if (typeof data.module === "object") {
             this.setAttribute("pfe-loaded", "");
             this._moduleData = data.module;
