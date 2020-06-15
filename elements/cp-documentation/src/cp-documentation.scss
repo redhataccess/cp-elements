@@ -1,7 +1,3 @@
-// Please see the pfe-sass README for guidance on using these tools
-@import "../../pfe-sass/pfe-sass";
-
-
 $LOCAL: documentation;
 
 :host {
@@ -34,3 +30,4 @@ $LOCAL: documentation;
 //   }
 // }
 
+@import "../node_modules/pantheon-front-end/scss/rhdocs.scss";

@@ -1,7 +1,7 @@
 {
   "name": "cp-documentation",
   "description": "Documentation element for PatternFly Elements",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "pfelement": {
     "className": "PfeDocumentation",
     "elementName": "cp-documentation",
@@ -47,6 +47,7 @@
     "gh-pages": "^2.2.0"
   },
   "devDependencies": {
+    "pantheon-front-end": "^0.1.1",
     "pinkie-promise": "^2.0.1"
   }
 }
