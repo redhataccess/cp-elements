@@ -1,7 +1,7 @@
 {
   "name": "cp-documentation",
   "description": "Documentation element for PatternFly Elements",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "pfelement": {
     "className": "PfeDocumentation",
     "elementName": "cp-documentation",
