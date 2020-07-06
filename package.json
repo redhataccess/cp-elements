@@ -123,9 +123,7 @@
     "whatwg-fetch": "^3.0.0",
     "yeoman-generator": "^4.4.0",
     "yo": "^1.8.5",
-    "yosay": "^2.0.2"
-  },
-  "dependencies": {
+    "yosay": "^2.0.2",
     "gh-pages": "^2.2.0"
   }
 }
