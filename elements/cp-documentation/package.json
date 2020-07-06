@@ -1,7 +1,7 @@
 {
   "name": "cp-documentation",
   "description": "Documentation element for PatternFly Elements",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "pfelement": {
     "className": "PfeDocumentation",
     "elementName": "cp-documentation",
@@ -42,11 +42,11 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@patternfly/pfe-sass": "1.0.0-prerelease.45",
-    "@patternfly/pfelement": "1.0.0-prerelease.45",
-    "gh-pages": "^2.2.0"
+    "@patternfly/pfelement": "1.0.0-prerelease.45"
   },
   "devDependencies": {
+    "@patternfly/pfe-sass": "1.0.0-prerelease.45",
+    "gh-pages": "^2.2.0",
     "pantheon-front-end": "^0.1.1",
     "pinkie-promise": "^2.0.1"
   }
