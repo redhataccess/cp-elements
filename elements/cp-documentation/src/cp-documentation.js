@@ -1,4 +1,4 @@
-import PFElement from "../../@patternfly/pfelement/dist/pfelement.js";
+import PFElement from "../../../@patternfly/pfelement/dist/pfelement.js"; // | umd
 
 // Config for mutation observer to see if things change inside of the component
 const lightDomObserverConfig = {
