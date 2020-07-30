@@ -27,7 +27,7 @@ module.exports = function factory({
     `${elementName}--*.min.css.map`,
     `${elementName}.json`
   ]);
-  
+
   // Dedupe any items
   files = files.filter((item,index) => files.indexOf(item) === index);
 
@@ -295,7 +295,7 @@ ${fs
     })
       .pipe(
         replace(
-          /^(import .*?)(['"]\.\.\/\.\.\/(?!\.\.\/).*)\.js(['"];)$/gm,
+          /^(import .*?)(.*?)\.js(['"];) \/\/ \| umd$/gm,
           "$1$2.umd$3"
         )
       )

@@ -1,4 +1,4 @@
-import PFElement from "<%= pfeElementLocation %>";
+import PFElement from "<%= pfeElementLocation %>"; // | umd
 
 class <%= elementClassName %> extends PFElement {
   static get tag() {
