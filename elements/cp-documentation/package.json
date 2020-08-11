@@ -1,7 +1,7 @@
 {
   "name": "@cpelements/cp-documentation",
   "description": "Documentation element for PatternFly Elements",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "pfelement": {
     "className": "PfeDocumentation",
     "elementName": "cp-documentation",
@@ -47,7 +47,7 @@
   "devDependencies": {
     "@patternfly/pfe-sass": "1.0.0-prerelease.45",
     "gh-pages": "^2.2.0",
-    "pantheon-front-end": "^0.1.2",
+    "pantheon-front-end": "0.1.2",
     "pinkie-promise": "^2.0.1"
   }
 }

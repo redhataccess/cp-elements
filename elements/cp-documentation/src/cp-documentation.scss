@@ -30,4 +30,22 @@ $LOCAL: documentation;
 //   }
 // }
 
+@mixin warning-message {
+  min-width: 40em;
+  display: block;
+  padding: 0.5em 1em;
+  background: #ffeeee;
+}
+
+// Message to editors/devs when for issues in content
+:host([pfe-c-non-prod]) {
+  [style] {
+    border: 2px solid #C9190B;
+    &:before {
+      @include warning-message;
+      content: "WARNING: This element has inline styles which can easily break layout on mobile or other contexts. The inline style is " attr(style);
+    }
+  }
+}
+
 @import "../node_modules/pantheon-front-end/scss/rhdocs.scss";
