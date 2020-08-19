@@ -49,6 +49,7 @@ class PfeDocumentation extends PFElement {
     this._loadCss = this._loadCss.bind(this);
     this.loadData = this.loadData.bind(this);
     this.getData = this.getData.bind(this);
+    this._navigationHandler = this._navigationHandler.bind(this);
 
     // Setup mutation observer to watch for content changes
     this._observer = new MutationObserver(this._processLightDom);
@@ -66,6 +67,12 @@ class PfeDocumentation extends PFElement {
 
     this.addEventListener(PfeDocumentation.events.change, this._changeHandler);
     this.addEventListener(PfeDocumentation.events.loaded, this._loadedHandler);
+
+    if (window.location.hash) {
+      window.addEventListener('load', this._navigationHandler);
+    }
+
+    window.addEventListener('hashchange', this._navigationHandler);
 
     if (this.hasAttribute("pfe-css")) {
       this._loadCss();
@@ -90,6 +97,18 @@ class PfeDocumentation extends PFElement {
       case "pfe-endpoint":
         this.loadData();
         break;
+    }
+  }
+
+  /**
+   * Handle any navigation action that points to an element in this element
+   */
+  _navigationHandler() {
+    let anchorLinkTarget = this.shadowRoot.getElementById(window.location.hash.substring(1));
+    if (anchorLinkTarget) {
+      // Offset top may be an issue, if so see:
+      // https://medium.com/@alexcambose/js-offsettop-property-is-not-great-and-here-is-why-b79842ef7582
+      window.scrollTo(window.scrollX, anchorLinkTarget.offsetTop);
     }
   }
 
@@ -119,6 +138,13 @@ class PfeDocumentation extends PFElement {
       shadowWrapper.append(newContentWrapper);
     }
     newContentWrapper.setAttribute("id", "content");
+
+    // Certain links need to be handled differently than normal
+    // const validLinks = this.shadowRoot.querySelectorAll('a[href]');
+    // for (let index = 0; index < validLinks.length; index++) {
+    //   const validLink = validLinks[index];
+    //   validLink.addEventListener('click', this._linkClickHandler);
+    // }
 
     // Reconnecting mutationObserver for IE11 & Edge
     if (window.ShadyCSS) {
